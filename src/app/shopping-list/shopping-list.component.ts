@@ -19,4 +19,7 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleFormAction(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
 }
