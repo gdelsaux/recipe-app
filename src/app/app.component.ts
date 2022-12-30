@@ -9,12 +9,6 @@ export class AppComponent {
   currentState: string = 'recipes';
 
   switchState(state: string) {
-    switch (state) {
-      case 'recipes':
-        this.currentState = state;
-        break;
-      case 'shoppingList':
-        this.currentState = state;
-    }
+    this.currentState = state;
   }
 }
