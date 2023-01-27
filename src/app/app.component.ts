@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentState: string = 'recipes';
+  loadedFeature = 'recipe';
 
-  switchState(state: string) {
-    this.currentState = state;
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
